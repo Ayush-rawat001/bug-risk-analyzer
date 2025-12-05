@@ -9,6 +9,7 @@ import ViewProjects from './pages/ViewProjects';
 import TesterProjects from './pages/TesterProjects';
 import ReportBug from './pages/ReportBug';
 import DeveloperBugs from './pages/DeveloperBugs';
+import DeveloperProjects from './pages/DeveloperProjects';
 import Profile from './pages/Profile';
 import { getUser } from './utils/auth';
 import './App.css';
@@ -102,6 +103,14 @@ function App() {
           element={
             <PrivateRoute allowedRoles={['developer']}>
               <DeveloperDashboard />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/developer/projects"
+          element={
+            <PrivateRoute allowedRoles={['developer']}>
+              <DeveloperProjects />
             </PrivateRoute>
           }
         />

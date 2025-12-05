@@ -6,6 +6,7 @@ function DeveloperSidebar() {
 
   const menuItems = [
     { path: '/developer/dashboard', label: 'Dashboard' },
+    { path: '/developer/projects', label: 'View Assigned Projects' },
     { path: '/developer/bugs', label: 'View Assigned Bugs' },
     { path: '/developer/profile', label: 'Profile' }
   ];
