@@ -1,0 +1,78 @@
+.projects-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  background: #f8f9fa;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+}
+
+.project-id {
+  color: #7f8c8d;
+  font-size: 12px;
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+.project-description {
+  color: #555;
+  margin: 0 0 15px 0;
+  line-height: 1.6;
+}
+
+.project-details {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 15px;
+}
+
+.project-details p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-badge.active {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-badge.completed {
+  background: #cce5ff;
+  color: #004085;
+}
+
+.status-badge.on-hold {
+  background: #fff3cd;
+  color: #856404;
+}
+
