@@ -68,3 +68,14 @@ export const getBugsByDeveloper = async (req, res) => {
   }
 };
 
+// Get bugs by tester (reported by)
+export const getBugsByTester = async (req, res) => {
+  try {
+    const { testerId } = req.params;
+    const bugs = await Bug.find({ reportedBy: testerId }).sort({ createdAt: -1 });
+    res.status(200).json(bugs);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
+

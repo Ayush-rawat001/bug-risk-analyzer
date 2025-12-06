@@ -23,6 +23,7 @@ export const getProjectsByTester = (testerId) => api.get(`/projects/tester/${tes
 export const createBug = (bugData) => api.post('/bugs/create', bugData);
 export const getBugs = () => api.get('/bugs');
 export const getBugsByDeveloper = (developerId) => api.get(`/bugs/developer/${developerId}`);
+export const getBugsByTester = (testerId) => api.get(`/bugs/tester/${testerId}`);
 
 // User APIs
 export const getUsersByRole = (role) => api.get(`/users/role/${role}`);
